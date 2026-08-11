@@ -4,16 +4,15 @@ int main()
 {
     double r,h,s,v;
     cout<<"Here I will Tell you the Surface-Area and Volume of a Cylinder of Dimensions that you give us"<<endl<<"Kindly Enter the Dimensions :- "<<endl;
-    cout<<"Enter the Radius (r) : "
+    cout<<"Enter the Radius (r) : ";
     cin>>r;
-    cout<<"Enter the Height (h) : "
+    cout<<"Enter the Height (h) : ";
     cin>>h;
 
     s = 2*3.14159*r*h;
     v = 3.14159*r*r*h;
     cout<<"The Surface-Area is : "<<s<<endl;
     cout<<"The Volume is : "<<v<<endl;
-    
     
     return 0;
 }
