@@ -3,15 +3,15 @@ using namespace std;
 int main()
 {
     char O ;
-long Number1,Number2;
-cout << "Which Operator do you wnat to use among (+ , - , * , /) ? " << endl;
-cin >> O ; 
-if ( (O == '+') || (O == '-') || (O == '*') || (O == '/') ){
+double Number1,Number2;
 cout << "Enter the 2 Numbers" << endl;
 cout << "Number 1: " ;
 cin >> Number1 ;
+cout << "Which Operator do you wnat to use among (+ , - , * , /) ? " << endl;
+cin >> O ; 
 cout << "Number 2: " ;
 cin >> Number2 ;
+if ( (O == '+') || (O == '-') || (O == '*') || (O == '/') ){
         if (O == '+' ){
             cout << "The Sum is: " << (Number1 + Number2) << endl;
         }
@@ -22,7 +22,7 @@ cin >> Number2 ;
             cout << "The Product is: " << (Number1 * Number2) << endl;
         }
         else if (O == '/' ){
-            cout << "The Quotient is: " << long (long(Number1) / long(Number2)) << endl;
+            cout << "The Answer is: " << float(float(Number1) / float(Number2)) << endl;
         }
 }   
 else {
