@@ -10,14 +10,14 @@ cout << "Number 2: ";
 cin >> b;
 cout << "Number 3: ";
 cin >> c;
-if ( a >> b && a >> c){
+if ( (a >= b && a >> c) || (a >= b && a >= c)){
     cout << "Number 1 is the Largest" << endl;
 }
-if ( b >> a && b >> c){
+if ( (b >= a && b >> c)  || (b >= a && b >= c)){
     cout << "Number 2 is the Largest" << endl;
     }
-if ( c >> b && c >> a){
+if ( (c >= a && c >> b) || ( c >= a && c >= b)){
     cout << "Number 3 is the Largest" << endl;
 }
-        return 0;
+    return 0;
 }
