@@ -1,10 +1,8 @@
 #include <iostream>
 #include <cmath>
 using namespace std;
-
 int main() {
     double a, b, c;
-
     cout << "Enter coefficients a, b, and c (a != 0): \n";
     cout << "a ";
     cin >> a;
@@ -12,9 +10,7 @@ int main() {
     cin >> b;
     cout << "c ";
     cin >> c;
-
     double discriminant = b * b - 4 * a * c;
-
     if (discriminant > 0) {
         double root1 = (-b + sqrt(discriminant)) / (2 * a);
         double root2 = (-b - sqrt(discriminant)) / (2 * a);
@@ -34,6 +30,5 @@ int main() {
         cout << "Root 1 = " << realPart << " + " << imaginaryPart << "i" << endl;
         cout << "Root 2 = " << realPart << " - " << imaginaryPart << "i" << endl;
     }
-
     return 0;
 }
