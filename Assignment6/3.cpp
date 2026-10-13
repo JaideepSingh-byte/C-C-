@@ -6,6 +6,17 @@ struct Time{
     int sec;
 };
 void display(Time display){
+    if(display.sec >= 60){
+        display.min += int(display.sec/60);
+        display.sec %= 60;
+    }
+    if(display.min >= 60){
+        display.hour += int(display.min/60);
+        display.min %= 60;
+    }
+    if(display.hour >= 24 ){
+        display.hour %= 24;
+    }
     cout << "Time: " << display.hour << ":" << display.min << ":" << display.sec << endl;
 }
 void Set_Time(Time set){
