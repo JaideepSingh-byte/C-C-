@@ -38,7 +38,7 @@ int main(){
     for(int i=0; i<3; i++){
         cin >> CG[i];
     }
-    studentRec Student[3] = {26411013,CG[0],"GPT",26411015,CG[1],"GPT", 26125006,CG[2],"DS-AI"};
+    studentRec Student[3] = {264110,CG[0],"GPT",264110,CG[1],"GPT", 261250,CG[2],"DS-AI"};
     sort(Student, 3);
     return 0;
 }
