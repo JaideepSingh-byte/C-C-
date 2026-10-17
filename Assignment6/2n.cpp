@@ -14,15 +14,7 @@ void print(studentRec order[], int size){
     }
 }
 void sort(studentRec Student[], int size){
-    studentRec order[size];
-    studentRec Max;
-    int pos;
-    Max.CGPA = 0;
-    for (int i=0; i<size; i++){
-            if(Max.CGPA<=Student[i].CGPA){
-                Max = Student[i];
-            }
-    }
+    studentRec order[size];studentRec Max;int pos;Max.CGPA = 0;
     for(int i=0; i<size ; i++){
         order[i].CGPA=10;
         //for storing the minimum value of CGPA in order and its position in pos
@@ -30,8 +22,11 @@ void sort(studentRec Student[], int size){
             if (order[i].CGPA>=Student[j].CGPA){
                 order[i] = Student[j];
                 pos = j;
-                }
-            }
+            }if(Max.CGPA<=Student[j].CGPA){
+                Max = Student[j]
+                ;
+             }
+        }
         //changing the Minimum record to Maximum Record in original copy(Student)
         Student[pos] = Max;
         }
