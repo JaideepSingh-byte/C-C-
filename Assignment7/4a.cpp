@@ -9,8 +9,7 @@ class Student
 public:
     void input()
     {
-        for(int i = 0; i < 5; i++)
-        {
+        for(int i = 0; i < 5; i++){
             cout << "\nStudent " << i+1 << endl;
             cout << "Enter name: ";
             cin >> name[i];
@@ -24,8 +23,7 @@ public:
     {
         int sum = 0;
         cout << "\n--- Student Records ---\n";
-        for(int i = 0; i < 5; i++)
-        {
+        for(int i = 0; i < 5; i++){
             cout << "\nName: " << name[i];
             cout << "\nRoll Number: " << roll[i];
             cout << "\nMarks: " << marks[i] << endl;
