@@ -14,11 +14,12 @@
         cin >> roll_no;
         cout << "Marks:";
         cin >> marks;
+        // Storing the student record in Student.txt file(Output)
         fout << name << endl;
         fout << roll_no << endl;
         fout << marks << endl;
     }
-fout.close();//Display of the Record
+fout.close();//Display of the Record by taking Input from Student.txt file
     ifstream fin("Student.txt");
     for(int i=0; i<5; i++){
         cout << "\nName: ";

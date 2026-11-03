@@ -17,7 +17,8 @@ int main(){
     outFile.close();
     //display of output on screen
     for(int i=0; i<5; i++){
-        cout << arr[i] << endl;
+        cout << arr[i] << " ";
     }
+    cout << endl;
     return 0;
 }

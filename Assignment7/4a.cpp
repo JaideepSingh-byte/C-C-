@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 using namespace std;
+/*This is an example of Student Record using class and function in C++ programing language*/
 class Student
 {
     string name[5];
